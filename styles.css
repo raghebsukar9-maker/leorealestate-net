@@ -61,8 +61,9 @@ body::before {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(18px);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 18px;
   box-shadow: var(--shadow);
 }
 
@@ -70,6 +71,18 @@ body::before {
   display: flex;
   gap: 18px;
   align-items: center;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand-mark img {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 .topbar a,
@@ -898,6 +911,18 @@ body.modal-open {
   align-items: center;
   border-top: 1px solid rgba(24, 24, 24, 0.08);
   margin-top: 22px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: block;
+  height: 42px;
+  width: auto;
 }
 
 .footer-links {
