@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo | Knoxville Real Estate</title>
+    <meta
+      name="description"
+      content="Leo Sukkar helps Knoxville buyers, sellers, and relocators avoid bad moves and make smart ones."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <nav>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Real Estate Specialist</p>
+            <h1 id="hero-name"></h1>
+            <p class="hero-line" id="hero-tagline"></p>
+            <p class="hero-subcopy" id="hero-subcopy"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" id="primary-cta" href="#contact"><span class="button-icon">💬</span><span id="primary-cta-label"></span></a>
+              <a class="button button-secondary" id="secondary-cta" href="#contact"><span class="button-icon">✉️</span><span id="secondary-cta-label"></span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="portrait-card avatar-card tilt-card">
+              <div class="portrait-glow"></div>
+              <div class="avatar-circle-wrap">
+                <img class="portrait-image avatar-image" src="./assets/leo-portrait.jpg" alt="Leo Sukkar portrait" />
+              </div>
+              <div class="zillow-badge" aria-label="Top Agent on Zillow badge">
+                <img class="zillow-badge-icon" src="./assets/zillow-badge-icon-clean.png" alt="" />
+                <div class="zillow-badge-copy">
+                  <strong>Top Agent</strong>
+                  <span>on Zillow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip section reveal" aria-label="Trust points">
+          <div class="trust-item" id="trust-1"></div>
+          <div class="trust-item" id="trust-2"></div>
+          <div class="trust-item" id="trust-3"></div>
+        </section>
+
+        <section class="section market-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Where Leo works</p>
+            <h2>Knoxville at the center. About 60 miles in every useful direction.</h2>
+          </div>
+          <div class="market-grid reveal">
+            <div class="market-map-card glass-card">
+              <div class="map-shell">
+                <img class="map-image" src="./assets/knoxville-metro-map.png" alt="Knoxville metropolitan area map" />
+                <div class="map-overlay"></div>
+                <div class="map-point pin-left" style="left: 38.28%; top: 68.34%;">Farragut</div>
+                <div class="map-point pin-right" style="left: 99.43%; top: 71.78%;">Sevierville</div>
+                <div class="map-point pin-bottom" style="left: 57.33%; top: 93.9%;">Maryville</div>
+                <div class="map-point pin-left" style="left: 0.57%; top: 70.98%;">Kingston</div>
+                <div class="map-point" style="left: 26.21%; top: 43.19%;">Oak Ridge</div>
+                <div class="map-point" style="left: 35.19%; top: 58.2%;">Hardin Valley</div>
+                <div class="map-point map-point-knoxville" style="left: 62.47%; top: 53.18%;">Knoxville</div>
+                <div class="map-point" style="left: 51.35%; top: 38.91%;">Powell</div>
+                <div class="map-point pin-top" style="left: 50.83%; top: 5.98%;">Andersonville</div>
+                <div class="map-point" style="left: 40.54%; top: 24.57%;">Clinton</div>
+                <div class="map-point pin-right" style="left: 93.07%; top: 50.36%;">Kodak</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="section reviews-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Client love</p>
+            <h2>Proof that feels real</h2>
+            <p>Clients' reviews</p>
+          </div>
+          <div class="reviews-scroller reveal" id="reviews-scroller">
+            <div class="reviews-track" id="reviews-track"></div>
+          </div>
+          <div class="review-modal" id="review-modal" aria-hidden="true">
+            <div class="review-modal-backdrop" data-close-review="true"></div>
+            <div class="review-modal-card glass-card" role="dialog" aria-modal="true" aria-labelledby="review-modal-author">
+              <button class="review-modal-close" id="review-modal-close" aria-label="Close full review">×</button>
+              <div class="stars">★★★★★</div>
+              <p class="review-modal-text" id="review-modal-text"></p>
+              <footer>
+                <strong id="review-modal-author"></strong>
+                <span id="review-modal-meta"></span>
+              </footer>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section about-grid">
+          <div class="about-card reveal">
+            <p class="eyebrow">About Leo</p>
+            <h2 id="about-heading"></h2>
+            <p id="about-copy-1"></p>
+            <p id="about-copy-2"></p>
+          </div>
+          <div class="stats-card reveal tilt-card">
+            <div class="places-header">
+              <span class="stat-label">Countries and states I have worked in</span>
+              <strong>Experience across different markets, styles, and people.</strong>
+            </div>
+            <div class="places-road" id="places-road"></div>
+            <div class="languages-note glass-card">
+              <span class="stat-label">Speaks</span>
+              <strong id="languages-note"></strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Services</p>
+            <h2>What you can hire me for</h2>
+          </div>
+          <div class="services-grid" id="services-grid"></div>
+        </section>
+
+        <section class="section process-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The process</p>
+            <h2>Learn the process step by step so you know what to expect.</h2>
+          </div>
+          <div class="process-grid" id="process-grid"></div>
+        </section>
+
+        <section id="contact" class="section cta-section reveal">
+          <div class="cta-panel tilt-card">
+            <div class="cta-copy">
+              <p class="eyebrow">Reach out</p>
+              <h2>Email or text and give the short version of your situation.</h2>
+              <p>
+                Buying, selling, relocating, investing — whatever it is, send the basics and Leo will tell you what actually makes sense.
+              </p>
+              <div class="contact-options">
+                <a id="contact-phone" class="contact-pill" href="#"></a>
+                <a id="contact-email" class="contact-pill" href="#"></a>
+                <a id="contact-text" class="contact-pill" href="#"></a>
+              </div>
+              <div class="complimentary-card glass-card">
+                <span class="complimentary-label">Complimentary 30 minutes</span>
+                <strong>No pressure. No weird sales script. Just a real conversation.</strong>
+              </div>
+            </div>
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/leosukkar1@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New website lead for Leo Sukkar" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://raghebsukar9-maker.github.io/thanks/" />
+              <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+              <input type="tel" name="phone" placeholder="Your phone number" aria-label="Your phone number" required />
+              <input type="email" name="email" placeholder="Your email" aria-label="Your email" required />
+              <textarea name="message" placeholder="Tell Leo what you’re looking for or what situation you’re in." aria-label="Tell Leo what you’re looking for or what situation you’re in." required></textarea>
+              <button type="submit" class="button button-primary">Send your message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong id="footer-name"></strong>
+          <p id="footer-brokerage"></p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a id="footer-instagram" href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a id="footer-facebook" href="#" target="_blank" rel="noreferrer">Facebook</a>
+          <a id="footer-x" href="#" target="_blank" rel="noreferrer">X</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
